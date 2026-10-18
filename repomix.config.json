@@ -1,0 +1,66 @@
+{
+  "$schema": "https://repomix.com/schemas/latest/schema.json",
+  "input": {
+    "maxFileSize": 500000,
+    "include": [
+      "backend/**/*.py",
+      "backend/requirements.txt",
+      "frontend/app/**",
+      "frontend/components/**",
+      "frontend/lib/**",
+      "frontend/package.json",
+      "frontend/next.config.ts",
+      "frontend/tsconfig.json",
+      "frontend/eslint.config.mjs",
+      "frontend/postcss.config.mjs",
+      "frontend/Dockerfile",
+      "docker-compose.yml",
+      "backend/Dockerfile",
+      ".dockerignore",
+      ".env.example",
+      "README.md",
+      "ARCHITECTURE.md",
+      "AI_USAGE.md",
+      "UAT_CHECKLIST.md",
+      "VAR_REPORT.md",
+      "docs/**/*.md"
+    ],
+    "ignore": {
+      "useGitignore": true,
+      "useDefaultPatterns": true,
+      "customPatterns": [
+        "**/.env",
+        "**/.env.*",
+        "**/node_modules/**",
+        "**/.next/**",
+        "**/__pycache__/**",
+        "**/.venv/**",
+        "**/venv/**",
+        "**/coverage/**",
+        "**/dist/**",
+        "**/build/**",
+        "repomix-output.xml",
+        "repomix-output-phase2.xml",
+        "screenshots/**",
+        "Screenshots and Video"
+      ]
+    }
+  },
+  "output": {
+    "filePath": "repomix-output-phase2.xml",
+    "style": "xml",
+    "parsableStyle": true,
+    "compress": false,
+    "fileSummary": true,
+    "directoryStructure": true,
+    "files": true,
+    "removeComments": false,
+    "removeEmptyLines": false,
+    "showLineNumbers": true,
+    "topFilesLength": 10,
+    "includeEmptyDirectories": false
+  },
+  "security": {
+    "enableSecurityCheck": true
+  }
+}
